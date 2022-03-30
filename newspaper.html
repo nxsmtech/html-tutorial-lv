@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"> <!-- Lai ir iespēja apstrādāt daudzu valodu specifiskus simbolus -->
+    <title>Manas lapas nosaukums</title> <!-- Obligāti norādiet lapas nosaukumu -->
+</head>
+<body>
+	<div class="header"> <!-- Katrai lapas sadaļai jāatrodās savā konteinerī ar pierakstītu klāt klases nosaukumu vai id -->
+		<p>
+			<strong>Diena pēc vakardienas: </strong><em>22 + 3 + 2. Septembrī</em>
+		</p>
+		<!-- Lapā jābūt tikai vienam H1 virsrakstam -->
+		<h1>Neinteresantākas ziņas pasaules vēsturē</h1>
+		<!-- <a> tags var atrasties apkart jebkuram citam tagam, lai piemēram par "linku" uztaisītu veselu bildi, sadaļu, tekstu -->
+		<a href="newspaper.html">
+			<img src="https://www.ladbible.com/cdn-cgi/image/width=720,quality=70,format=jpeg,fit=pad,dpr=1/https%3A%2F%2Fs3-images.ladbible.com%2Fs3%2Fcontent%2F733ff9e65fdbed5b62b45728a7a76145.png" alt="Heading image">
+		</a>
+		<p><em>Bet cik tomēr skaisti virsraksti</em></p>
+	</div>
+	<div class="div content block popup ddd" style="color: red;">
+
+		<h2>Lauzošās ziņas</h2>
+
+		<p>Lauzošās ziņas pēdējās nedēļas laikā</p>
+		<!-- Zemāk nenumurēta saraksta piemērs -->
+		<ul class="list-of-articles block">
+			<li><!-- Iekš saraksta vienības elementa var atrasties citi elementi -->
+				<div>
+					<h4>Tik labu rakstu vajadzētu izlasīt</h4>
+					<!-- Zemāk ir teksts, kurš ved uz raksta lapu projekta lapā -->
+					<p> Paldies, ka izlasijāt, nekā vērtīga te nebija un nebūs, bet <a href="article1.html"><strong><em>Lasīt tālāk</em></strong></a>
+				</div>
+			</li>
+			<li>
+				<div>
+					<h4>Cik labs laiks ārā</h4>
+					<p>Tuvākajās stundās sagaida spēcīgas lietusgāzes un plūdus, tāpēc ka <a href="article2.html"><strong><em>Lasīt tālāk</em></strong></a>
+				</div>
+			</li>
+			<li>
+				<div>
+					<h4>Virieša stils. Kas un kur jāpērk</h4>
+					<p>Lietojiet šo balzamu trīs reizes dienā un <a href="article3.html"><strong><em>Lasīt tālāk</em></strong></a>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+	<!-- Konteinerī var norādīt gan klasi, gan id, bet jāatceras, ka id jābūt unikālam, savukārt klase var atkārtoties -->
+	<div id="latest-news">
+		<h2>Šeit varētu būt jaunākās ziņas</h2>
+		
+		<p>Neviens nezin, kuras ziņas ir jaunākās</p>
+		
+		<ul>
+			<li>
+				<div>
+					<h4>Top 4.5 vīrieši pēc kaimiņienes domām</h4>
+					<!-- Zemāk ir numurēta saraksta piemērs -->
+					<ol>
+						<li>Smills Wilth</li>
+						<li>Andreano Chipollino</li>
+						<li>Mark Cukiniberg</li>
+						<li>Dan Jackiels</li>
+						<li>Billy Harrington</li>
+					</ol>
+				</div>
+			</li>
+			<li>
+				<div>
+					<h4>Pilsēta atkal spīd</h4>
+					<p>Tuvāko gadu laika asfaltu aizstās ar atstarojošiem stabiņiem <a href="article1.html"><strong><em>Lasīt tālāk</em></strong></a>
+			</li>
+			<li>
+				<div>
+					<h4>Atrāk brauksi augstāk tiksi</h4>
+					<p>Elons Masks plāno sūtīt pirmo divriteni kosmosā, izmantojot tramplīnu ar <a href="article2.html"><strong><em>Lasīt tālāk</em></strong></a>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+
+	<div id="video">
+		<h3>22. gadsimtā lidmašīnas aizstās ar slotam</h3>
+		<!-- Video un bilžu izmērus var noteikt iekš tag ar izmēra atribūtiem -->
+		<video src="https://www.w3schools.com/html/mov_bbb.mp4" height="200" width="600" controls>
+	</div>
+
+
+	<!-- 
+			Zemāk ir formas piemērs.
+			Stili formai ir uzrakstīti "inline-style". Tādu pieraksta veidu nav ieteicam izmantot, bet retos gadījumos to var darīt
+			ar mērķi vēlāk izlabot. Vislabākais veids ir iznest stilus atsevišķā failā, pieslēgt pie sava html dokumenta un tad balstoties
+			uz klašu nosaukumiem ietekmēt kāda objekta stilu. Ja visi stili būs pierakstīti inline, tad būs viegli apmaldīties kodā,
+			duplicēt kodu un veikt izmaiņas.
+			Bet kā piemērs, inline-style pieraksts atrodas formas kodā.
+
+			https://www.w3schools.com/html/html_css.asp - Vairāk par CSS stiliem
+
+		
+		    Failiem article1/2/3.html biju importējus kopējo .css failu ar stiliem. Protams būtu logīskāk sadalīt .css failus
+			sīkāk: piem. article.css newspaper.css form.css, kur glabāsies specifisks css konkrētājām lapas daļām.
+	-->
+	<div>
+		<div class="form" style="text-align: center; margin: auto; width: 300px;">
+			<div class="form" style="margin-top: 20px; margin-bottom: 400px;">
+				<!-- Formai ir action un method attribūti kas atbild par sasaisti ar serveri, bet pagaidām mēs to neapskatīsim -->
+				<form action="/saveNewspaper" method="POST" style="display: flex; flex-direction: column; width: 300px;">
+					<h3>Gribāt pasūtīt laikrakstu uz mājām?</h3>
+					<div style="margin-top: 10px; display: flex; flex-direction: column;">
+						<!-- Atribūts to= vajadzīgs lai pievienotu label tagu pie konkrēta input ar norādītu id -->
+						<label class="input" to="name">Vārds</label>
+						<!-- 
+							Var norādīt, ka šis lauks būt obligāts (required) aizpildīšanai.
+							Pogas "apstiprināt" (submit) nospiešanas brīdī nostrādas pārbaude kas izmetīs brīdinājumu,
+							ja ievadlauks nav aizpildīts.
+							Placeholder - teksts kas parādās ja ievadlauks ir tukšs
+							Type text - ievadlauka var ievadīt jebkādu tekstu
+						 -->
+						<input class="input" type="text" placeholder="Kaut kāds teksts" id="name" required>
+					</div>
+		
+					<div style="margin-top: 10px; display: flex; flex-direction: column;">
+						<label to="zurnalu-skaits">Cik žurnālus gribāt pasūtīt?</label>
+						<!-- Var noteikt min un max vērtības, ka arī intervālu -->
+						<!-- Lai varētu izvēlēties var noteikt tipu number -->
+						<input type="number" min="1" max="5" step="1" id="zurnalu-skaits">
+					</div>
+		
+					<div style="margin-top: 10px; display: flex; flex-direction: column;">
+						<!-- Teksta ievadlaukam var noteikt izmēru nosaukot rindu un kolonnu skaitu -->
+						<textarea style="margin-top: 10px;" rows="2" cols="10"></textarea>
+					</div>
+		
+					<div style="margin-top: 10px; display: flex; flex-direction: column;">
+						<select>
+							<option value="moja-ziznj">Mana dzīve</option>
+							<option value="tvoja-ziznj">Tava dzīve</option>
+							<option value="vasha-ziznj">Jūsu dzīve</option>
+							<option value="razve-ziznj">Vai tā ir dzīve?</option>
+						</select>
+					</div>
+		
+					<div style="margin-top:20px">
+						<!-- Submit tips saka pārlūkprogrammai, ka šo formu ir jāapstrādā un jāaizsūtā uz serveri
+							 Kura vieta serverī atbildes par šo nosaka attribūti action un method
+						-->
+						<input type="submit" value="Apstiprināt">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
