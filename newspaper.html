@@ -110,7 +110,7 @@
 					<h3>Gribāt pasūtīt laikrakstu uz mājām?</h3>
 					<div style="margin-top: 10px; display: flex; flex-direction: column;">
 						<!-- Atribūts to= vajadzīgs lai pievienotu label tagu pie konkrēta input ar norādītu id -->
-						<label class="input" to="name">Vārds</label>
+						<label class="input" for="name">Vārds</label>
 						<!-- 
 							Var norādīt, ka šis lauks būt obligāts (required) aizpildīšanai.
 							Pogas "apstiprināt" (submit) nospiešanas brīdī nostrādas pārbaude kas izmetīs brīdinājumu,
@@ -122,7 +122,7 @@
 					</div>
 		
 					<div style="margin-top: 10px; display: flex; flex-direction: column;">
-						<label to="zurnalu-skaits">Cik žurnālus gribāt pasūtīt?</label>
+						<label for="zurnalu-skaits">Cik žurnālus gribāt pasūtīt?</label>
 						<!-- Var noteikt min un max vērtības, ka arī intervālu -->
 						<!-- Lai varētu izvēlēties var noteikt tipu number -->
 						<input type="number" min="1" max="5" step="1" id="zurnalu-skaits">
@@ -135,10 +135,10 @@
 		
 					<div style="margin-top: 10px; display: flex; flex-direction: column;">
 						<select>
-							<option value="moja-ziznj">Mana dzīve</option>
-							<option value="tvoja-ziznj">Tava dzīve</option>
-							<option value="vasha-ziznj">Jūsu dzīve</option>
-							<option value="razve-ziznj">Vai tā ir dzīve?</option>
+							<option value="mana-dzive">Mana dzīve</option>
+							<option value="tava-dzive">Tava dzīve</option>
+							<option value="jusu-dzive">Jūsu dzīve</option>
+							<option value="vai-tad-ta-ir-dzive">Vai tā ir dzīve?</option>
 						</select>
 					</div>
 		
